@@ -24,7 +24,6 @@ public class IntegerToRomanTest {
         assertNotEquals(uno, tre);
     }   
 
-
     @Test
     void convertFourToSix(){    
         IntegerToRoman ir = new IntegerToRoman();
@@ -32,4 +31,5 @@ public class IntegerToRomanTest {
         assertEquals("IV", quattro);
    
     }  
+    
 }
