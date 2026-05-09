@@ -12,9 +12,16 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+
     - name: Compile
       run: mvn compile
+
     - name: Test
       run: mvn test
+      
     - name: Static Analysis
       run: mvn package
+      
+    - name: Report Coverage
+      run: mvn clean test jacoco:report coveralls:report -DrepoToken=${{ secrets.COVERALLS_TOKEN }}
+    

@@ -38,7 +38,7 @@ public static String convert(int number) {
     while (number > 0) {
         Integer l = keys.floorKey(number);
         
-        if (l == null)  break; 
+        if (l == null){ break; } 
         result.append(keys.get(l));
         
         number -= l;

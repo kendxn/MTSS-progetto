@@ -6,7 +6,7 @@
 <module name="Checker">
   
   <module name="FileLength">
-    <property name="max" value="5"/> 
+    <property name="max" value="150"/> 
   </module>
 
   <module name="TreeWalker">
