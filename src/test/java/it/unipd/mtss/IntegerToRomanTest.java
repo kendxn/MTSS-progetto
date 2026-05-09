@@ -7,9 +7,17 @@ public class IntegerToRomanTest {
     
     @Test
     void checkRes(){    
-        IntegerToRoman ir = new IntegerToRoman();
-        String ris=ir.convert(3);
-        assertEquals("III", ris);
+       String expected = 
+        "  I    I    I  \n" +
+        "  I    I    I  \n" +
+        "  I    I    I  \n" +
+        "  I    I    I  \n" +
+        "  I    I    I  \n" +
+        "  I    I    I  \n";
+
+    String result = RomanPrinter.print(3);
+
+    assertEquals(expected, result, "La stampa di III non corrisponde al formato atteso");
     }   
 
 
